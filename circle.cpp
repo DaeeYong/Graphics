@@ -1,7 +1,5 @@
 ﻿/*
-	이름 : 김대용
-	학번 : 201721064
-	학과 : 미디어학과
+	name : Elwlrma
 */
 
 #define GLEW_STATIC
