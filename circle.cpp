@@ -70,7 +70,7 @@ void init() {
 	triData.push_back(u16vec3(0, 1, 2));
 	triData.push_back(u16vec3(0, 3, 1));
 	*/
-	//버퍼 생성(vertex data 버퍼)
+	//create buffer(vertex data buffer)
 	glGenBuffers(1, &triBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, triBuffer); //active
 	glBufferData(GL_ARRAY_BUFFER,triVertData.size()*sizeof(vec3),triVertData.data(),GL_STATIC_DRAW);
@@ -96,6 +96,6 @@ void render(GLFWwindow* window) {
 
 	glBindVertexArray(va);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementArray);
-	glDrawElements(GL_TRIANGLES,1083,GL_UNSIGNED_INT,0); //점 번호 개수
+	glDrawElements(GL_TRIANGLES,1083,GL_UNSIGNED_INT,0); //vetex number for link dots
 	glfwSwapBuffers(window);
 }
